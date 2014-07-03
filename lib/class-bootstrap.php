@@ -28,6 +28,11 @@ namespace UsabilityDynamics\SEO {
       public $text_domain = false;
 
       /**
+       *
+       */
+      public $seo = NULL;
+      
+      /**
        * Singleton Instance Reference.
        *
        * @public
@@ -58,7 +63,19 @@ namespace UsabilityDynamics\SEO {
             'text_domain' => $this->text_domain,
           )
         ) );
+        
+        //** Run plugin on after_setup_theme hook */
+        add_action( "after_setup_theme", array( $this, 'run' ) );
 
+      }
+      
+      /**
+       *
+       */
+      public function run() {
+        if( defined( 'WPSEO_VERSION' ) && version_compare( WPSEO_VERSION, '1.5.3.3' ) >= 0 ) {
+          new Twitter( $this );
+        }
       }
 
       /**
