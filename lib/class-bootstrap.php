@@ -74,7 +74,10 @@ namespace UsabilityDynamics\SEO {
        */
       public function run() {
         if( defined( 'WPSEO_VERSION' ) && version_compare( WPSEO_VERSION, '1.5.3.3' ) >= 0 ) {
-          new Twitter( $this );
+          //** Adds Social Twitter customizations */
+          new Twitter();
+          //** Adds Sitewide Custom Meta Functionality */
+          new Custom_Meta();
         }
       }
 
