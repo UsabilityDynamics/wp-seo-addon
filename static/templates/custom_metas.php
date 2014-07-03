@@ -44,4 +44,3 @@ require_once( ABSPATH . 'wp-admin/options-head.php' );
     </div><!-- end of div wpseo_content_top -->
   </div><!-- end of div wpseo_content_wrapper -->
 </div><!-- end of wrap -->
-<?php
