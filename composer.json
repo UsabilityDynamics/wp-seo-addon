@@ -1,6 +1,7 @@
 {
   "name": "usabilitydynamics/wp-seo-addon",
   "version": "0.1.0",
+  "type": "wordpress-plugin",
   "homepage": "https://github.com/UsabilityDynamics/wp-seo-addon",
   "keywords": [
     "wordpress",
