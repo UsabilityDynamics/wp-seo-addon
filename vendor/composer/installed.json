@@ -1,16 +1,16 @@
 [
     {
         "name": "usabilitydynamics/lib-utility",
-        "version": "master",
-        "version_normalized": "9999999-dev",
+        "version": "0.3.2",
+        "version_normalized": "0.3.2.0",
         "source": {
             "type": "git",
             "url": "git@github.com:usabilitydynamics/lib-utility",
-            "reference": "master"
+            "reference": "0.3.2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/usabilitydynamics/lib-utility/archive/master.zip",
+            "url": "https://github.com/usabilitydynamics/lib-utility/archive/0.3.2.zip",
             "reference": null,
             "shasum": null
         },
@@ -79,7 +79,7 @@
         },
         "require": {
             "php": ">=5.3",
-            "usabilitydynamics/lib-utility": "*"
+            "usabilitydynamics/lib-utility": "~0.3"
         },
         "type": "library",
         "extra": {
