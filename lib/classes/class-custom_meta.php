@@ -45,8 +45,8 @@ namespace UsabilityDynamics\SEO {
         
         $_submenu = array(
           'wpseo_dashboard',
-          __( 'Yoast WordPress SEO: Custom SiteWide Metas', get_wp_seo_addon( 'text_domain' ) ),
-          __( 'Custom Metas', get_wp_seo_addon( 'text_domain' ) ),
+          __( 'Yoast WordPress SEO: Custom SiteWide Metas', ud_get_wp_seo_addon( 'text_domain' ) ),
+          __( 'Custom Metas', ud_get_wp_seo_addon( 'text_domain' ) ),
           'manage_options',
           'wpseo_custom_metas',
           array( $this, 'load_page' )
@@ -68,8 +68,8 @@ namespace UsabilityDynamics\SEO {
        */
       public function load_page() {
         $options = get_option( 'wpseo_custom_meta', array() );
-        wp_enqueue_style( 'wpseo-addon-custom', plugins_url( 'static/styles/custom.css', dirname( __FILE__ ) ), array(), get_wp_seo_addon( 'version' ) );
-        require_once( dirname( __DIR__ ) . '/static/templates/custom_metas.php' );
+        wp_enqueue_style( 'wpseo-addon-custom', ud_get_wp_seo_addon()->path( 'static/styles/custom.css', 'url' ), array(), ud_get_wp_seo_addon( 'version' ) );
+        require_once( ud_get_wp_seo_addon()->path( '/static/views/custom_metas.php', 'dir' ) );
       }
       
       /**

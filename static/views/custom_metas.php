@@ -23,14 +23,14 @@ require_once( ABSPATH . 'wp-admin/options-head.php' );
                 <li>
                   <ul>
                     <li class="name">
-                      <label><?php _e( 'Name', get_wp_seo_addon( 'text_domain' ) ); ?> <input type="text" value="<?php echo $option[ 'name' ] ?>" name="wpseo_custom_meta[<?php echo $i ?>][name]" /></label>
+                      <label><?php _e( 'Name', ud_get_wp_seo_addon( 'text_domain' ) ); ?> <input type="text" value="<?php echo $option[ 'name' ] ?>" name="wpseo_custom_meta[<?php echo $i ?>][name]" /></label>
                       <select name="wpseo_custom_meta[<?php echo $i ?>][type]" >
                         <option value="name" <?php echo $option[ 'type' ] == 'name' ? 'selected="selected"' : ''; ?>>name</option>
                         <option value="property" <?php echo $option[ 'type' ] == 'property' ? 'selected="selected"' : ''; ?>>property</option>
                       </select>
                     </li>
                     <li class="content">
-                      <label><?php _e( 'Content', get_wp_seo_addon( 'text_domain' ) ); ?> <input type="text" value="<?php echo $option[ 'content' ] ?>" name="wpseo_custom_meta[<?php echo $i ?>][content]" /></label>
+                      <label><?php _e( 'Content', ud_get_wp_seo_addon( 'text_domain' ) ); ?> <input type="text" value="<?php echo $option[ 'content' ] ?>" name="wpseo_custom_meta[<?php echo $i ?>][content]" /></label>
                     </li>
                   </ul>
                   <p class="desc"></p>
